@@ -2,7 +2,7 @@ import React from "react";
 import "../../index.css";
 import { useNavigate } from "react-router-dom";
 
-const Login = () => {
+const Signup = () => {
   const navigate = useNavigate();
 
   return (
@@ -60,11 +60,12 @@ const Login = () => {
             ></textarea>
           </div>
 
-          <div className="bg-sky-700 flex justify-center items-center p-3 w-28 rounded-md mb-5">
-            <button onClick={() => navigate("/home")} className="text-white">
-              submit
-            </button>
-          </div>
+          <button
+            onClick={() => navigate("/signin")}
+            className="text-white bg-sky-700 flex justify-center items-center p-3 w-28 rounded-md mb-5"
+          >
+            submit
+          </button>
 
           <div className="text-white">
             <span>
@@ -83,4 +84,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;

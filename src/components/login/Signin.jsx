@@ -32,7 +32,7 @@ const Signin = () => {
           </div>
 
           <div className="bg-sky-700 flex justify-center items-center p-3 w-28 rounded-md mb-5">
-            <button onClick={() => navigate("/")} className="text-white">
+            <button onClick={() => navigate("/home")} className="text-white">
               submit
             </button>
           </div>
@@ -42,7 +42,7 @@ const Signin = () => {
               create new account,{" "}
               <button
                 className="text-sky-400 hover:text-sky-300"
-                onClick={() => navigate("/")}
+                onClick={() => navigate("/signup")}
               >
                 SignUp
               </button>
